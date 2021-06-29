@@ -72,14 +72,35 @@
 }
 
 .principal-1 .btn:active + .card > .card__front {
+  transform: rotate(-190deg) scale(0);
   transition: 0.5s ease-in-out;
 }
 
+.principal-2 .btn:active + .card > .card__front {
+  opacity: 0;
+  transform: rotate(60deg) scale(0);
+  transition: 0.5s ease-in-out;
+}
+
+.principal-3 .btn:active + .card > .card__front {
+  transform: scale(2);
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
 .principal-4 .btn:active + .card > .card__front {
-  transform: translate(300px);
-  transform: scale(0);
+  transform: translate(300px) scale(0);
   opacity: 0;
   transition: all ease-in-out 0.3s;
+}
+
+.principal-5 .card > .card__front {
+  transform-origin: 20px 20px;
+}
+.principal-5 .btn:active + .card > .card__front {
+  transform: rotate(180deg);
+  opacity: 0;
+  transition: all ease-in-out 1s;
 }
 
 .principal-6 .card > .card__front {
